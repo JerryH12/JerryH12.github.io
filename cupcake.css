@@ -1,0 +1,13 @@
+article{
+    color: #000;
+}
+
+a#logo {
+    text-decoration: none;
+
+}
+#logo img {
+    width: 200px;
+    height: 200px;
+
+}
