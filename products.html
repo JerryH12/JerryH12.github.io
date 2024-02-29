@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cupcakes - Products</title>
-    <link rel="stylesheet" href="cupcake.css"/>
+    <link rel="stylesheet" href="cupcake.css"/>  
 </head>
-<body>
-    <header>
-        <a id="logo" href="index.html"><img alt="munamii" src="munamii.png"/></a>
-        <nav id="nav">
-            <a href="index.html">HOME | </a>
-            <a href="about.html">ABOUT | </a>
-            <a href="products.html">PRODUCTS | </a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-    <article>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga perspiciatis maiores minus amet reprehenderit quas velit laboriosam, veniam illo est? Reiciendis cum eos quae obcaecati ex nam nihil culpa!
-    </article>
-    <footer></footer>
+<body onload="showproducts()">
+    <div id="container">
+        <header>
+            <div id="logo"></div>
+            <nav id="menu">
+                <a href="index.html">HOME </a>
+                <a href="about.html">ABOUT </a>
+                <a class="select" href="products.html">PRODUCTS </a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+        <article id="productPage">
+            <h2>CUPCAKES</h2>
+                <div id="products" class="flex-container"></div>
+        </article>
+        <footer>© Munamii Cakery <a href="https://facebook.com/munamiicupcakes"><img src="fb-icon.png"/></a></footer>
+    </div>
+    <script>
+        function showproducts() {
+            const myRequest = new Request("products.json"); 
+            fetch(myRequest)
+            .then((response) => response.json()) 
+            .then((data) => {
+
+                var element = document.getElementById("products");
+                var html = "";
+
+                for (const product of data.products) {
+                   html = "<section>";                    
+                   html += `<img class='productImage' src='${product.image}' alt='cupcake'/>`
+                   html += `<h3>${product.productname}</h3>`;
+                   html += `${product.price}`; 
+                   html += "</section>";
+                   element.innerHTML += html;
+                }}
+            )   
+        }     
+    </script>
 </body>
-</html> 
+</html>
