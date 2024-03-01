@@ -99,13 +99,13 @@ footer a:link, footer a:visited, footer a:active  {
     }
 
     #logo {
-        left:35%;
+        left:30%;
         top: 55%;
     }
 
     #largeText {
         font-size: 32px;
-        left: 15%;
+        left: 10%;
         top: 70%;
     }
 
@@ -113,7 +113,7 @@ footer a:link, footer a:visited, footer a:active  {
         font-size: 16px;
         line-height: 22px;
         width: 95%;
-       
+        margin-top: 60px;
     }
   }
 #menu {
