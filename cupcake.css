@@ -1,7 +1,6 @@
 body {
     margin:0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 header {
@@ -45,8 +44,7 @@ article {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
-    
+    margin-bottom: 80px; 
 }
 
 article#productPage {
