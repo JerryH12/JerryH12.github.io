@@ -100,13 +100,13 @@ footer a:link, footer a:visited, footer a:active  {
 
     #logo {
         left:50%;
-        top: 75%;
+        top: 55%;
     }
 
     #largeText {
         font-size: 32px;
         left: 30%;
-        top: 90%;
+        top: 70%;
     }
 
     article {
