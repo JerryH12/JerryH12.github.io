@@ -1,9 +1,9 @@
 {"products" : [
-    { "productname" : "Chocolate Mint Marvel", "price" : 100, "image" : "images/im1.jpg" },
-    { "productname" : "Red Velvet Revelry", "price" : 100, "image" : "images/im2.jpg" },
-    { "productname" : "Lavender Lemonade", "price" : 100, "image" : "images/im3.jpg" },
-    { "productname" : "Strawberry Serenade", "price" : 100, "image" : "images/im4.jpg" },
-    { "productname" : "Minty Marvel", "price" : 100, "image" : "images/im5.jpg" },
-    { "productname" : "Pineapple Paradise", "price" : 100, "image" : "images/im6.jpg" },
-    { "productname" : "Espresso Elegance", "price" : 100, "image" : "images/im7.jpg" },
-    { "productname" : "Lemon Zest Zing", "price" : 100, "image" : "images/im8.jpg" } ]}
+    { "productname" : "Chocolate Mint Marvel", "price" : 30, "image" : "images/im1.jpg" },
+    { "productname" : "Red Velvet Revelry", "price" : 40, "image" : "images/im2.jpg" },
+    { "productname" : "Lavender Lemonade", "price" : 30, "image" : "images/im3.jpg" },
+    { "productname" : "Strawberry Serenade", "price" : 30, "image" : "images/im4.jpg" },
+    { "productname" : "Minty Marvel", "price" : 40, "image" : "images/im5.jpg" },
+    { "productname" : "Pineapple Paradise", "price" : 30, "image" : "images/im6.jpg" },
+    { "productname" : "Espresso Elegance", "price" : 30, "image" : "images/im7.jpg" },
+    { "productname" : "Lemon Zest Zing", "price" : 40, "image" : "images/im8.jpg" } ]}

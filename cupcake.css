@@ -25,9 +25,7 @@ article {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
     text-align:center;
-   
-   min-height: 820px;
-   
+    min-height: 820px;
     background: #fff;
     color: #333;
     font-size: 18px;
@@ -35,12 +33,17 @@ article {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 80px;
     
 }
 
 article#productPage {
    width:90%;
    line-height: normal;
+}
+
+#productPage h2 {
+    margin-top: 60px;
 }
 
 section {
@@ -52,13 +55,25 @@ section {
 }
 footer {
     padding: 10px;
-   
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     background: #e6e6e6;
+    color: #333;
+}
+
+footer span {
+    margin-right: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:link, footer a:visited, footer a:active  {
+    color: #333;
 }
 
 .flex-container {
@@ -67,6 +82,7 @@ footer {
     justify-content: space-around;
 }
 
+/* adjust for small screens */
 @media screen and (max-width: 460px) {
     #menu a {
       display: block;
@@ -90,6 +106,7 @@ footer {
 #menu a {
     text-decoration: none;
     color: #fff;
+    text-shadow: 1px 1px #333;
     font-family: arial;
     font-weight: bold;
     font-size: 14px;
@@ -107,11 +124,6 @@ a#logo {
     width: 200px;
     height: 200px;
 
-}
-
-.select {
-    
-    /*background: lightblue;*/
 }
 
 .productImage{

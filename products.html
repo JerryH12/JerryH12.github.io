@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,67 @@
         <header>
             <div id="logo"></div>
             <nav id="menu">
-                <a href="index.html">HOME </a>
-                <a href="about.html">ABOUT </a>
-                <a class="select" href="products.html">PRODUCTS </a>
-                <a href="contact.html">CONTACT</a>
+                <a href="index.html">HEM </a>
+                <a href="about.html">OM OSS </a>
+                <a class="select" href="products.html">PRODUKTER </a>
+                <a href="contact.html">KONTAKT</a>
             </nav>
         </header>
         <article id="productPage">
+            <!-- Load from JSON file -->
             <h2>CUPCAKES</h2>
-                <div id="products" class="flex-container"></div>
+            <div id="products" class="flex-container"></div>
+
+            <h2>CAKES</h2>
+            <div class="flex-container">
+                <section>
+                    <img class="productImage" src="images/im9.jpg" alt="cake" />
+                    <h3>Jack</h3>
+                    800 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im10.jpg" alt="cake" />
+                    <h3>Valentin</h3>
+                    300 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im11.jpg" alt="cake" />
+                    <h3>Kitty Cat</h3>
+                    350 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im12.jpg" alt="cake" />
+                    <h3>Veronica</h3>
+                    400 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im13.jpg" alt="cake" />
+                    <h3>Elisa</h3>
+                    500 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im14.jpg" alt="cake" />
+                    <h3>Party Cocolate Cake</h3>
+                    500 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im15.jpg" alt="cake" />
+                    <h3>Grinch</h3>
+                    300 kr
+                </section>
+                <section>
+                    <img class="productImage" src="images/im16.jpg" alt="cake" />
+                    <h3>Gabriela</h3>
+                    500 kr
+                </section>
+            </div>
         </article>
-        <footer>© Munamii Cakery <a href="https://facebook.com/munamiicupcakes"><img src="fb-icon.png"/></a></footer>
+      
+        <footer>
+            <span>© Munamii Cakery</span>
+            <span><a href="https://facebook.com/munamiicupcakes"><img src="fb-icon.png"/> munamiicupcakes</a></span>
+            <span><a href="mailto:jane.doe@example.com">Email</a></span>
+        </footer>
     </div>
     <script>
         function showproducts() {
@@ -37,7 +87,7 @@
                    html = "<section>";                    
                    html += `<img class='productImage' src='${product.image}' alt='cupcake'/>`
                    html += `<h3>${product.productname}</h3>`;
-                   html += `${product.price}`; 
+                   html += `${product.price} kr`; 
                    html += "</section>";
                    element.innerHTML += html;
                 }}
